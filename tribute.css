@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow-x: hidden;
+}
+
+#main {
+  margin-top: -65px;
+  margin-left: -8px;
+  font-family: "Segoe UI", Arial;
+  color: white;
+  height: 100%;
+}
+
+header {
+  height: 100%;
+  font-family: 'Gloria Hallelujah', cursive;
+  background: top no-repeat scroll url("https://i.postimg.cc/02Xn3zsH/Oreo-header.jpg");
+  background-size: cover;
+  margin-top: 65px;
+}
+
+#header-text {
+  text-align: center;
+  width: 40%;
+  height: 100%;
+}
+
+#title {
+  text-transform: uppercase;
+  font-size: 10vw;
+  color: black;
+  margin-bottom: 0px;
+}
+
+#subtitle {
+  font-size: 4.5vw;
+  text-align: center;
+  color: black;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  line-height: 6vw;
+}
+
+#down_arrow {
+  width: 12%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 65px;
+  width: 100%;
+  background: black;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:visited {
+  color: white;
+}
+
+#home_icon {
+  height: 32px;
+  vertical-align: bottom;
+}
+
+#tribute-info {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+h2 {
+  font-family: "Gloria Hallelujah";
+  font-size: 2em;
+  padding-top: 67px;
+}
+
+.image {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 30%;
+  min-width: 290px;
+  max-width: 2988px;
+  border: solid rgb(30,35,40) 7px;
+}
+
+.quote {
+  background: rgb(30,35,40);
+  font-style: italic;
+  font-size: 1.5em;
+  font-family: "Gloria Hallelujah";
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  padding: 15px;
+}
+
+#snoot {
+  width: 20%;
+}
+
+#tribute-link {
+  color: white;
+}
+
+#tribute-link:visited {
+  color: white;
+}
+
+#album-photo {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 550px));
+  grid-template-rows: repeat(auto-fill, auto auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    "canape beau"
+    "fou panier"
+    "colis vacances"
+    "patte vacances";
+  font-size: 0.8em;
+  line-height: 1.1em;
+  text-align: center;
+}
+
+.album-cell {
+  display: grid;
+  margin: 0px;
+  justify-self: center;
+}
+
+.photo-album {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(30,35,40) 5px;
+}
+
+.left {
+  justify-self: right;
+}
+
+.right {
+  justify-self: left;
+}
+
+#oreo-panier {
+  width: 256px;
+  grid-area: panier;
+}
+
+#oreo-panier img {
+  height: 280px;
+}
+
+#oreo-pieds {
+  width: 310px;
+  grid-area: patte;
+}
+
+#oreo-pieds img {
+  width: 300px;
+}
+
+#oreo-colis {
+  width: 310px;
+  grid-area: colis;
+}
+
+#oreo-colis img {
+  width: 300px;
+}
+
+#oreo-canape {
+  width: 460px;
+  grid-area: canape;
+}
+
+#oreo-canape img {
+  width: 450px;
+}
+
+#oreo-vacances {
+  width: 310px;
+  grid-area: vacances;
+}
+
+#oreo-vacances img {
+  width: 300px;
+}
+
+#oreo-beau {
+  width: 383px;
+  grid-area: beau;
+}
+
+#oreo-beau img {
+  height: 210px;
+}
+
+#oreo-fou {
+  width: 460px;
+  grid-area: fou;
+}
+
+#oreo-fou img {
+  width: 450px;
+}
+
+figcaption {
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+#copyright {
+  text-align: right;
+  margin-right: 50px;
+}
+
+@media (max-width: 1245px) {
+  #title {
+    font-size: 124px;
+  }
+  #subtitle {
+    font-size: 56px;
+    line-height: 73px;
+  }
+  
+  #down_arrow {
+  width: 58px;
+}
+  
+  #album-photo {
+    grid-template-columns: minmax(auto, 550px);
+    grid-template-areas:
+    "canape"
+    "beau"
+    "fou"
+    "panier"
+    "colis"
+    "patte"
+    "vacances";
+  }
+  
+  .left, .right {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .album-cell {
+    width: 255px;
+  }
+  
+  .photo-album {
+    width: 100%;
+    max-width: 255px;
+  }
+  
+  .left, .right {
+    justify-self: center;
+  }
+  
+  #oreo-canape, #oreo-panier, #oreo-fou, #oreo-beau, #oreo-colis, #oreo-pieds, #oreo-vacances {
+    width: auto;
+  }
+
+#oreo-panier img {
+  height: auto;
+}
+
+#oreo-beau img {
+  height: auto;
+  }
+
+  
+  
+  
+}
+
+@media (max-width: 770px) {
+  #subtitle {
+    width: 235px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    font-size: 1.2em;
+  }
+}
